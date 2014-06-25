@@ -1,0 +1,131 @@
+/* Global */
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Anonymous Pro", "Lucida Console", Monaco, monospace; 
+	margin: 50px auto;
+	text-align: center;
+	width: 940px;
+}
+
+p {
+	line-height: 1.25;
+}
+
+.relative {
+	position: relative;
+}
+
+/* Buttons */
+button.no-default {
+	border: 0 none;
+	background: none;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+button.no-default:focus {
+	outline: none;
+} 
+
+button.no-default:hover {
+	opacity: .8;
+}
+
+button.stop {
+	left: 3px;
+}
+
+button.stop:hover {
+	color: red;
+}
+
+button.forward:hover,
+button.left:hover,
+button.right:hover,
+button.reverse:hover,
+button.forward.active,
+button.left.active,
+button.right.active,
+button.reverse.active {
+	color: green;
+}
+
+button.reverse {
+	top: -5px;
+}
+
+/* Font Sizes */
+.font-size-48 {
+	font-size: 48px;
+}
+
+.font-size-64 {
+	font-size: 64px;
+}
+
+div.dek {
+	margin: 0 auto;
+	text-align: left;
+	width: 400px;
+}
+
+@media ( max-width: 979px ) {
+	body {
+		width: 90%;
+	}
+} 
+
+@media ( max-width: 479px ) {
+	div.dek {
+		width: auto;
+	}
+}
+
+/* Icon Font */
+@font-face {
+	font-family: 'yun';
+	src:url('../fonts/icomoon/yun.eot?ndyfxm');
+	src:url('../fonts/icomoon/yun.eot?#iefixndyfxm') format('embedded-opentype'),
+		url('../fonts/icomoon/yun.woff?ndyfxm') format('woff'),
+		url('../fonts/icomoon/yun.ttf?ndyfxm') format('truetype'),
+		url('../fonts/icomoon/yun.svg?ndyfxm#yun') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icomoon-yun-"], [class*=" icomoon-yun-"] {
+	font-family: 'yun';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-yun-stop:before {
+	content: "\f04d";
+}
+.icomoon-yun-left:before {
+	content: "\f053";
+}
+.icomoon-yun-right:before {
+	content: "\f054";
+}
+.icomoon-yun-forward:before {
+	content: "\f077";
+}
+.icomoon-yun-reverse:before {
+	content: "\f078";
+}
+.icomoon-yun-square:before {
+	content: "\f0c8";
+}
