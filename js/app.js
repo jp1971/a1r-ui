@@ -7,29 +7,32 @@
  *
  */
 
-requirejs.config({
+requirejs.config( {
     paths: {
         'jquery': 'lib/jquery.min',
         'keypress': 'lib/keypress',
-        'ctrl': 'yun/ctrl',
-        'toggle_led': 'yun/toggle_led',
-        'cut_up': 'yun/cut_up'
+        'ajax': 'a1r/ajax',
+        'click': 'a1r/click',
+        'press': 'a1r/press',
+        'util': 'a1r/util'
     },
     shim: {
     }
-});
+} );
 
-requirejs([
+requirejs( [
         'jquery',
         'keypress',
-        'ctrl',
-        'toggle_led',
-        'cut_up'
+        'ajax',
+        'click',
+        'press',
+        'util'
     ], function (
         $,
         keypress,
-        ctrl,
-        toggle_led,
-        cut_up
-    ){
-});
+        ajax,
+        click,
+        press,
+        util
+    ) {
+} );
